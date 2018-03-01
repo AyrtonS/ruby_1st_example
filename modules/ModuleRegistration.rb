@@ -3,8 +3,8 @@ module CreatePersonLoginModule
 	def self.main_init
 
 			puts "Crio uma pessoa? <s ou n>"
-			@resultado = gets
-			if @resultado == "s"
+			resultado = gets
+			if resultado <=> "s"
 				puts "Ok criando uma pessoa"
 				login = Login.new
 				pessoa = Person.new
@@ -22,9 +22,9 @@ module CreatePersonLoginModule
 				@senha = gets
 
 				login.senha=(@senha)
-				puts "Logado"
+				
 			else 
-				puts result
+				puts resultado
 			end 
 	end
 end	
